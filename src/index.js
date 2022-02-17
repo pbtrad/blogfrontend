@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import App from  './App';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Register from './components/register';
 
 const routing = (
   <Router>
@@ -12,6 +13,7 @@ const routing = (
       <Header />
       <Routes>
         <Route exact path="/" element={<App />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
     </React.StrictMode>
